@@ -1,0 +1,17 @@
+{
+  "name": "rabbitmq-import-export",
+  "version": "1.0.1",
+  "main": "",
+  "scripts": {},
+  "keywords": [
+    "rabbitmq",
+    "import",
+    "export"
+  ],
+  "author": "Gary J",
+  "license": "ISC",
+  "description": "RabbitMQ Import & Export",
+  "dependencies": {
+    "amqplib": "^0.10.5"
+  }
+}
