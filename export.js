@@ -1,6 +1,6 @@
 const amqp = require('amqplib');
 
-async function fetchAndRequeueMessages(url, queueName) {
+async function main(url, queueName) {
   try {
     // Connect to queue
     const connection = await amqp.connect(url);
@@ -64,6 +64,9 @@ if (!queueName) {
   process.exit();
 }
 
-const url = args[1] || 'amqp://localhost';
+let url = args[1] || 'amqp://localhost';
+if (!url.startsWith("amqp://")) {
+  url = `amqp://${url}`;
+}
 
-fetchAndRequeueMessages(url, queueName);
+main(url, queueName);

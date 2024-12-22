@@ -4,13 +4,14 @@
   "main": "",
   "scripts": {},
   "keywords": [
+    "amqp",
     "rabbitmq",
     "import",
     "export"
   ],
   "author": "Gary J",
   "license": "ISC",
-  "description": "RabbitMQ Import & Export",
+  "description": "MQ Import & Export. Exports & imports messages from any amqp compatible MQ server including RabbitMQ",
   "dependencies": {
     "amqplib": "^0.10.5"
   }
